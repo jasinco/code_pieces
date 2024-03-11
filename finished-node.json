@@ -1,0 +1,2084 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fac76b685ad8bd89",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ad0a2ef4a09ebcc1",
+        "type": "ui_group",
+        "name": "機臺磨損",
+        "tab": "1224fe18e68205cf",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f4334f22bc3197e6",
+        "type": "ui_group",
+        "name": "產能指標",
+        "tab": "1224fe18e68205cf",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aaadb4bbf0ca396a",
+        "type": "ui_group",
+        "name": "HMI",
+        "tab": "1224fe18e68205cf",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1224fe18e68205cf",
+        "type": "ui_tab",
+        "name": "系統狀態",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "16e3b919958134b1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#5e5c64",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e6146fb309880de2",
+        "type": "ui_tab",
+        "name": "訂單管理",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0d9a1b3c665e0d62",
+        "type": "MySQLdatabase",
+        "name": "db",
+        "host": "192.168.122.161",
+        "port": "3306",
+        "db": "opencart",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "2fe3ea9f0328165c",
+        "type": "ui_group",
+        "name": "生產中",
+        "tab": "e6146fb309880de2",
+        "order": 1,
+        "disp": true,
+        "width": 13,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2de56a9b4f174e3a",
+        "type": "ui_group",
+        "name": "訂單查詢 ",
+        "tab": "e6146fb309880de2",
+        "order": 2,
+        "disp": true,
+        "width": 13,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "948d0c3b0ed146b6",
+        "type": "ui_group",
+        "name": "生產管理",
+        "tab": "e6146fb309880de2",
+        "order": 3,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a84097c7f0f74d0d",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "18180cc58ba1eb6d"
+            ]
+        ]
+    },
+    {
+        "id": "79788644aff9dcac",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "SQL ",
+        "info": "1. SELECT CONCAT(oc_order.firstname, \" \", oc_order.lastname) as buyer, oc_order.order_id, oc_order.date_modified as time, oc_order.total as price FROM oc_order;\n2. SELECT oc_order_product.name, oc_order_product.quantity, oc_order_option.value, oc_order_product.model FROM `oc_order_product` INNER JOIN oc_order_option ON oc_order_option.order_product_id=oc_order_product.order_product_id WHERE oc_order_product.order_id=5;",
+        "x": 1190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "18180cc58ba1eb6d",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "select",
+        "func": "msg.topic = \"SELECT CONCAT(oc_order.firstname, \\\" \\\", oc_order.lastname) as buyer, oc_order.order_id, oc_order.date_modified as time, oc_order.total as price FROM oc_order;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 40,
+        "wires": [
+            [
+                "f2ae28ca3ba701c5"
+            ]
+        ]
+    },
+    {
+        "id": "e6fb56a59a58786d",
+        "type": "link in",
+        "z": "f6f2187d.f17ca8",
+        "name": "db",
+        "links": [],
+        "x": 445,
+        "y": 100,
+        "wires": [
+            [
+                "2f31599cfd3ed427"
+            ]
+        ]
+    },
+    {
+        "id": "2f31599cfd3ed427",
+        "type": "mysql",
+        "z": "f6f2187d.f17ca8",
+        "mydb": "0d9a1b3c665e0d62",
+        "name": "query",
+        "x": 540,
+        "y": 100,
+        "wires": [
+            [
+                "255838d6b0ffbc32"
+            ]
+        ]
+    },
+    {
+        "id": "255838d6b0ffbc32",
+        "type": "link out",
+        "z": "f6f2187d.f17ca8",
+        "name": "link out 1",
+        "mode": "return",
+        "links": [],
+        "x": 655,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f2ae28ca3ba701c5",
+        "type": "link call",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "e6fb56a59a58786d"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 590,
+        "y": 40,
+        "wires": [
+            [
+                "bdee9efb1eaf9173"
+            ]
+        ]
+    },
+    {
+        "id": "7681ac093ea4cc6e",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d108d7a517e82576",
+        "type": "ui_table",
+        "z": "f6f2187d.f17ca8",
+        "group": "2fe3ea9f0328165c",
+        "name": "產品",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "product",
+                "title": "產品名稱",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "quantity",
+                "title": "數量",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "procs",
+                "title": "蓋印次數",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "material",
+                "title": "材質",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1090,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f2c3019f5b619919",
+        "type": "ui_table",
+        "z": "f6f2187d.f17ca8",
+        "group": "2de56a9b4f174e3a",
+        "name": "查詢產品",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "product",
+                "title": "產品名稱",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "quantity",
+                "title": "數量",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "procs",
+                "title": "蓋印次數",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "material",
+                "title": "材質",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1020,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "fda66f61de222833",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "0e4a7e4682f67a62"
+            ]
+        ]
+    },
+    {
+        "id": "0e4a7e4682f67a62",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "reset",
+        "func": "global.set(\"order\", [])\nglobal.set(\"prd\", undefined)\nglobal.set(\"ready\", [])\nglobal.set(\"created\", [])\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "2242a0079fb139de"
+            ]
+        ]
+    },
+    {
+        "id": "74b6ece0d178a889",
+        "type": "ui_table",
+        "z": "f6f2187d.f17ca8",
+        "group": "2de56a9b4f174e3a",
+        "name": "訂單",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "buyer",
+                "title": "客戶名稱",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "id",
+                "title": "訂單編號",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "下單時間",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "price",
+                "title": "訂單金額",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1030,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "bdee9efb1eaf9173",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "set global",
+        "func": "var order = global.get(\"order\")\nif (Array.isArray(order) && order.length != msg.payload.length){\n    msg.payload.map((x,id) => {\n        x[\"id\"] = id+1;\n        x[\"time\"] = new Date(x[\"time\"]).toLocaleString()\n        return x;\n    });\n    global.set(\"ready\", msg.payload.filter((item) =>{\n        return item.id != global.get(\"prd\") && item.id != global.get(\"created\")\n    }).map((x) => x.id))\n    \n    global.set(\"order\", msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 40,
+        "wires": [
+            [
+                "7681ac093ea4cc6e",
+                "74b6ece0d178a889",
+                "fde40e4bc5c39fca"
+            ]
+        ]
+    },
+    {
+        "id": "3f4d24450b7e5084",
+        "type": "ui_numeric",
+        "z": "f6f2187d.f17ca8",
+        "name": "訂單查詢",
+        "label": "訂單查詢",
+        "tooltip": "",
+        "group": "2de56a9b4f174e3a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "9999",
+        "step": 1,
+        "className": "",
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "98321a9dfb9456c3"
+            ]
+        ]
+    },
+    {
+        "id": "98321a9dfb9456c3",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "selection",
+        "func": "if (msg.payload <= global.get(\"order\").length){\n    msg.select = global.get(\"order\").find((x) => {\n        return x.id == msg.payload;\n    }).order_id;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "a6a46781cb98ee73",
+                "19e05b483baa21e8"
+            ]
+        ]
+    },
+    {
+        "id": "7bf7cdfb953fb184",
+        "type": "link in",
+        "z": "f6f2187d.f17ca8",
+        "name": "product",
+        "links": [],
+        "x": 945,
+        "y": 140,
+        "wires": [
+            [
+                "e6dc3fab8fab1546",
+                "33bc5394e9082284"
+            ]
+        ]
+    },
+    {
+        "id": "e6dc3fab8fab1546",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "product",
+        "func": "if (msg.select != undefined){\n    msg.topic = \"SELECT oc_order_product.name as product, oc_order_product.quantity, oc_order_option.value as procs, oc_order_product.model as material FROM `oc_order_product` LEFT JOIN oc_order_option ON oc_order_option.order_product_id=oc_order_product.order_product_id WHERE oc_order_product.order_id=\"+msg.select+\";\";\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 140,
+        "wires": [
+            [
+                "58d2bd391cf53cef"
+            ]
+        ]
+    },
+    {
+        "id": "1f860b43504c367a",
+        "type": "link out",
+        "z": "f6f2187d.f17ca8",
+        "name": "link out 2",
+        "mode": "return",
+        "links": [],
+        "x": 1295,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "a6a46781cb98ee73",
+        "type": "link call",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "7bf7cdfb953fb184"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 840,
+        "y": 300,
+        "wires": [
+            [
+                "f2c3019f5b619919"
+            ]
+        ]
+    },
+    {
+        "id": "58d2bd391cf53cef",
+        "type": "link call",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "e6fb56a59a58786d"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1210,
+        "y": 140,
+        "wires": [
+            [
+                "1f860b43504c367a"
+            ]
+        ]
+    },
+    {
+        "id": "19e05b483baa21e8",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "select",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "33bc5394e9082284",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "not state",
+        "func": "if (msg.select == undefined){\n    msg.payload = [{\"product\":\"\",\"quantity\":\"\", \"procs\":\"\", \"material\":\"\"}]\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 220,
+        "wires": [
+            [
+                "1f860b43504c367a"
+            ]
+        ]
+    },
+    {
+        "id": "7d5a63c77ee1c4df",
+        "type": "ui_numeric",
+        "z": "f6f2187d.f17ca8",
+        "name": "加急編號",
+        "label": "加急編號",
+        "tooltip": "",
+        "group": "948d0c3b0ed146b6",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "9999",
+        "step": 1,
+        "className": "",
+        "x": 180,
+        "y": 540,
+        "wires": [
+            [
+                "8f3be7d9b81096c1"
+            ]
+        ]
+    },
+    {
+        "id": "27c49800e47f0493",
+        "type": "ui_button",
+        "z": "f6f2187d.f17ca8",
+        "name": "訂單加急",
+        "group": "948d0c3b0ed146b6",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "訂單加急",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 580,
+        "wires": [
+            [
+                "9a3a714eb9e7fdca"
+            ]
+        ]
+    },
+    {
+        "id": "95466ffb667c7a45",
+        "type": "ui_table",
+        "z": "f6f2187d.f17ca8",
+        "group": "948d0c3b0ed146b6",
+        "name": "排產中訂單",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "buyer",
+                "title": "客戶名稱",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "id",
+                "title": "訂單編號",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "下單時間",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "price",
+                "title": "訂單金額",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 630,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "65f30114dc41ab4e",
+        "type": "ui_table",
+        "z": "f6f2187d.f17ca8",
+        "group": "948d0c3b0ed146b6",
+        "name": "已完成訂單",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "buyer",
+                "title": "客戶名稱",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "id",
+                "title": "訂單編號",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "下單時間",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "price",
+                "title": "訂單金額",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 630,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "da3fce3b011298f6",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "948d0c3b0ed146b6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "排產中訂單",
+        "label": "排產中訂單",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "0be0bc8f29a3edd6",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "948d0c3b0ed146b6",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "已完成訂單",
+        "label": "已完成訂單",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "091d92ac3aa5eb0b",
+        "type": "link in",
+        "z": "f6f2187d.f17ca8",
+        "name": "update order",
+        "links": [],
+        "x": 305,
+        "y": 400,
+        "wires": [
+            [
+                "4491376a7988bfd6",
+                "860a1ae460a4aa26",
+                "cf615bc590679bd3"
+            ]
+        ]
+    },
+    {
+        "id": "4491376a7988bfd6",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "update ready",
+        "func": "var ready = global.get(\"ready\")\nvar order = global.get(\"order\")\n\nmsg.payload = ready.map((x) => {\n    return order.find((y) => x==y.id)\n})\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 400,
+        "wires": [
+            [
+                "95466ffb667c7a45"
+            ]
+        ]
+    },
+    {
+        "id": "860a1ae460a4aa26",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "update created",
+        "func": "var created = global.get(\"created\")\nvar order = global.get(\"order\")\n\nmsg.payload = created.map((x) => {\n    return order.find((y) => x==y.id)\n})\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 480,
+        "wires": [
+            [
+                "65f30114dc41ab4e"
+            ]
+        ]
+    },
+    {
+        "id": "fde40e4bc5c39fca",
+        "type": "link call",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "091d92ac3aa5eb0b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cba57cc205fc3c50",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "2fe3ea9f0328165c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "客戶名稱",
+        "label": "客戶名稱",
+        "format": "{{msg.buyer}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4a8f429dc460b5e6",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "2fe3ea9f0328165c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "訂單編號",
+        "label": "訂單編號",
+        "format": "{{msg.id}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f9a57a13e0d99410",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "2fe3ea9f0328165c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "下單時間",
+        "label": "下單時間",
+        "format": "{{msg.time}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "89ad0dcab99dba78",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "group": "2fe3ea9f0328165c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "訂單金額",
+        "label": "訂單金額",
+        "format": "{{msg.price}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e2a42c8612d6b5b0",
+        "type": "link in",
+        "z": "f6f2187d.f17ca8",
+        "name": "producing",
+        "links": [],
+        "x": 685,
+        "y": 580,
+        "wires": [
+            [
+                "aaf115b6b0b1b81f",
+                "56c732e3df6a6060"
+            ]
+        ]
+    },
+    {
+        "id": "aaf115b6b0b1b81f",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "producing",
+        "func": "var item = global.get(\"order\").find((x) => x.id == global.get(\"prd\"))\nif (item !=undefined){\n    msg.select = item.order_id\n    msg.buyer = item.buyer\n    msg.time = item.time\n    msg.price = item.price\n    msg.id = item.id\n    msg.payload = item\n}else{\n    msg.select = undefined\n    msg.buyer = \"\"\n    msg.time = \"\"\n    msg.price = \"\"\n    msg.id = \"\"\n    msg.payload = \"\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 580,
+        "wires": [
+            [
+                "3b269999d830b1fd",
+                "cba57cc205fc3c50",
+                "4a8f429dc460b5e6",
+                "f9a57a13e0d99410",
+                "89ad0dcab99dba78"
+            ]
+        ]
+    },
+    {
+        "id": "3b269999d830b1fd",
+        "type": "link call",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "7bf7cdfb953fb184"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 940,
+        "y": 460,
+        "wires": [
+            [
+                "d108d7a517e82576"
+            ]
+        ]
+    },
+    {
+        "id": "56c732e3df6a6060",
+        "type": "link out",
+        "z": "f6f2187d.f17ca8",
+        "name": "link out 3",
+        "mode": "return",
+        "links": [],
+        "x": 745,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "cf615bc590679bd3",
+        "type": "link out",
+        "z": "f6f2187d.f17ca8",
+        "name": "link out 4",
+        "mode": "return",
+        "links": [],
+        "x": 345,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "8f3be7d9b81096c1",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "set emerge",
+        "func": "flow.set(\"emerge\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a3a714eb9e7fdca",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "emerge apply",
+        "func": "var ready = global.get(\"ready\");\nvar index = ready.indexOf(flow.get(\"emerge\"))\nif (index != -1){\n    var x = ready.splice(index,1)[0];\n    ready.splice(0,0,x);\n    global.set(\"ready\", ready);\n    msg.payload = ready;\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "b53cbd00d2021205",
+                "f948530a2d21d91f"
+            ]
+        ]
+    },
+    {
+        "id": "2242a0079fb139de",
+        "type": "link call",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "e2a42c8612d6b5b0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 480,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b53cbd00d2021205",
+        "type": "link call",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "links": [
+            "091d92ac3aa5eb0b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 560,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f948530a2d21d91f",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "714690d5f95a88de",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 1,
+        "group": "ad0a2ef4a09ebcc1",
+        "width": 0,
+        "height": 0,
+        "label": "請更換蓋印頭",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 270,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "506874e24683277b",
+        "type": "ui_gauge",
+        "z": "fac76b685ad8bd89",
+        "name": "蓋印頭剩餘次數",
+        "group": "ad0a2ef4a09ebcc1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "蓋印頭剩餘次數",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 300,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c40b7cce21cf3886",
+        "type": "ui_button",
+        "z": "fac76b685ad8bd89",
+        "name": "更換完成",
+        "group": "ad0a2ef4a09ebcc1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "更換完成",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5c6716432fe9e1b",
+        "type": "ui_gauge",
+        "z": "fac76b685ad8bd89",
+        "name": "良率",
+        "group": "f4334f22bc3197e6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "良率",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 610,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1135664433e69b73",
+        "type": "ui_text",
+        "z": "fac76b685ad8bd89",
+        "group": "f4334f22bc3197e6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "待生產",
+        "label": "待生產數量",
+        "format": "{{msg.ready}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ef4e3dd13bf3f30e",
+        "type": "ui_text",
+        "z": "fac76b685ad8bd89",
+        "group": "f4334f22bc3197e6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "已生產",
+        "label": "已生產數量",
+        "format": "{{msg.created}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "37e500790b5f9671",
+        "type": "ui_text",
+        "z": "fac76b685ad8bd89",
+        "group": "f4334f22bc3197e6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "瑕疵品數量",
+        "label": "瑕疵品數量",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7ffae8ca1aaeb0e8",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 1,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "Status LED",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Status LED",
+        "x": 760,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "91901405841bcd80",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 2,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "龍門運轉燈",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "龍門運轉燈",
+        "x": 850,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2ae28d03ac42631e",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 3,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "整列運轉燈",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "整列運轉燈",
+        "x": 850,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7e23d0a9cef5c909",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 4,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "輸送帶運轉燈",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "輸送帶運轉燈",
+        "x": 860,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b8c2d481a3ff84f7",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 5,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "出料狀態指示燈_位置 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "出料狀態指示燈_位置 1",
+        "x": 890,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b8259c5a210b4c4d",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 6,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "出料狀態指示燈_位置 2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "出料狀態指示燈_位置 2",
+        "x": 890,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e7ba4e462ea46553",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 7,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "出料狀態指示燈_位置 3",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "出料狀態指示燈_位置 3",
+        "x": 890,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c2f10e4b25cb6a41",
+        "type": "ui_led",
+        "z": "fac76b685ad8bd89",
+        "order": 8,
+        "group": "aaadb4bbf0ca396a",
+        "width": 0,
+        "height": 0,
+        "label": "出料狀態指示燈_位置 4",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "出料狀態指示燈_位置 4",
+        "x": 890,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "c2344a70bb0e5463",
+        "type": "ui_switch",
+        "z": "fac76b685ad8bd89",
+        "name": "自動生產啟動",
+        "label": "自動生產啟動",
+        "tooltip": "",
+        "group": "aaadb4bbf0ca396a",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 860,
+        "y": 560,
+        "wires": [
+            [
+                "33c9b50c0030d5a2"
+            ]
+        ]
+    },
+    {
+        "id": "350b761e0a50ade6",
+        "type": "ui_switch",
+        "z": "fac76b685ad8bd89",
+        "name": "模擬",
+        "label": "模擬",
+        "tooltip": "",
+        "group": "aaadb4bbf0ca396a",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 830,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a1dcd217f531052",
+        "type": "link in",
+        "z": "fac76b685ad8bd89",
+        "name": "update_status",
+        "links": [],
+        "x": 415,
+        "y": 180,
+        "wires": [
+            [
+                "913f5a09c469df79",
+                "8a2a466232900ec0"
+            ]
+        ]
+    },
+    {
+        "id": "913f5a09c469df79",
+        "type": "function",
+        "z": "fac76b685ad8bd89",
+        "name": "updateState",
+        "func": "msg.ready = global.get(\"ready\").length\nmsg.created = global.get(\"created\").length\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 180,
+        "wires": [
+            [
+                "1135664433e69b73",
+                "ef4e3dd13bf3f30e"
+            ]
+        ]
+    },
+    {
+        "id": "33c9b50c0030d5a2",
+        "type": "function",
+        "z": "fac76b685ad8bd89",
+        "name": "auto",
+        "func": "flow.set(\"auto\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "241dfd2c211bfc90",
+        "type": "inject",
+        "z": "fac76b685ad8bd89",
+        "name": "update",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "03361c031226fb3a"
+            ]
+        ]
+    },
+    {
+        "id": "03361c031226fb3a",
+        "type": "function",
+        "z": "fac76b685ad8bd89",
+        "name": "auto?",
+        "func": "msg.payload = flow.get(\"auto\")\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "22e6d950693c0f6b",
+                "f509cd6153be9e8c"
+            ]
+        ]
+    },
+    {
+        "id": "0cb3f103f918371f",
+        "type": "link call",
+        "z": "fac76b685ad8bd89",
+        "name": "",
+        "links": [
+            "e2a42c8612d6b5b0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 770,
+        "y": 80,
+        "wires": [
+            [
+                "adb2ea6a8ae639cc"
+            ]
+        ]
+    },
+    {
+        "id": "adb2ea6a8ae639cc",
+        "type": "link call",
+        "z": "fac76b685ad8bd89",
+        "name": "",
+        "links": [
+            "091d92ac3aa5eb0b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 960,
+        "y": 80,
+        "wires": [
+            [
+                "d22cfca9f4687695"
+            ]
+        ]
+    },
+    {
+        "id": "22e6d950693c0f6b",
+        "type": "function",
+        "z": "fac76b685ad8bd89",
+        "name": "produce",
+        "func": "var ready = global.get(\"ready\")\nif (ready.length > 0 && global.get(\"prd\") == undefined && msg.payload){\n    var item = ready.shift()\n    global.set(\"prd\", item);\n    global.set(\"ready\", ready);\n    return msg;    \n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 80,
+        "wires": [
+            [
+                "0cb3f103f918371f"
+            ]
+        ]
+    },
+    {
+        "id": "f509cd6153be9e8c",
+        "type": "function",
+        "z": "fac76b685ad8bd89",
+        "name": "led state",
+        "func": "msg.payload = msg.payload && global.get(\"prd\") != undefined\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 20,
+        "wires": [
+            [
+                "7ffae8ca1aaeb0e8"
+            ]
+        ]
+    },
+    {
+        "id": "d22cfca9f4687695",
+        "type": "link call",
+        "z": "fac76b685ad8bd89",
+        "name": "",
+        "links": [
+            "3a1dcd217f531052"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1160,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a2a466232900ec0",
+        "type": "link out",
+        "z": "fac76b685ad8bd89",
+        "name": "link out 5",
+        "mode": "return",
+        "links": [],
+        "x": 495,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a9b8f677d8847f00",
+        "type": "inject",
+        "z": "fac76b685ad8bd89",
+        "name": "complete",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 700,
+        "wires": [
+            [
+                "9977fc310c2d9305"
+            ]
+        ]
+    },
+    {
+        "id": "9977fc310c2d9305",
+        "type": "function",
+        "z": "fac76b685ad8bd89",
+        "name": "finish",
+        "func": "var prd = global.get(\"prd\")\nif (prd != undefined){\n    var created = global.get(\"created\")\n    global.set(\"prd\", undefined)\n    created.push(prd)\n    global.set(\"created\", created)\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 700,
+        "wires": [
+            [
+                "b7fe43fe3836721c"
+            ]
+        ]
+    },
+    {
+        "id": "b7fe43fe3836721c",
+        "type": "link call",
+        "z": "fac76b685ad8bd89",
+        "name": "",
+        "links": [
+            "e2a42c8612d6b5b0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 690,
+        "y": 700,
+        "wires": [
+            [
+                "069716b4790875d0"
+            ]
+        ]
+    },
+    {
+        "id": "069716b4790875d0",
+        "type": "link call",
+        "z": "fac76b685ad8bd89",
+        "name": "",
+        "links": [
+            "091d92ac3aa5eb0b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 880,
+        "y": 700,
+        "wires": [
+            [
+                "e01de87386c8d08d"
+            ]
+        ]
+    },
+    {
+        "id": "e01de87386c8d08d",
+        "type": "link call",
+        "z": "fac76b685ad8bd89",
+        "name": "",
+        "links": [
+            "3a1dcd217f531052"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1080,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    }
+]
