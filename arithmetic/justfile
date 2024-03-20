@@ -1,0 +1,3 @@
+run:
+    gcc test.c --std=c2x -g -o test
+    
